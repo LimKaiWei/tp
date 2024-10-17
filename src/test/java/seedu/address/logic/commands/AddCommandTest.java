@@ -192,6 +192,11 @@ public class AddCommandTest {
         public void changeWeeklySchedule(Predicate<Meeting> predicate) {
             throw new AssertionError("This method should not be called.");
         }
+
+        @Override
+        public boolean hasMeeting(Meeting meeting) {
+            throw new AssertionError("This method should not be called.");
+        }
     }
 
     /**
