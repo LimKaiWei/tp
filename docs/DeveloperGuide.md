@@ -799,3 +799,5 @@ Team size: 5
 1. **Modify meeting sample data to generate whole number timings.**
    Currently time fields for meetings sample data is generated using `LocalTime#now` which provides very precise timing up to the milliseconds.
    While it is not wrong, some user complained that it looks wrong or invalid to display timings as such, and it would be much appropriate to display time fields as available to the users through other commands, i.e. if user cannot add time field up to milliseconds of precision, do not display time fields up to milliseconds of precision.
+1. **Fix meeting-contacts error message formatting not on new line.**
+   This enhancement fell under the category of *the current behavior inconveniences the user but there is a way to work around it.*
